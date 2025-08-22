@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <marquee behavior="" direction="">Những chú đom đóm lấy lại danh dự cho J97- chàng trai quê Bến Tre</marquee>
+    <h1>FORM Điền thông tin</h1>
+    <!--Cho phép người dùng điền dữ liệu-->
+    <form>
+      <div>
+        <p>
+          <b>Họ và tên:</b>
+          <input
+            type="text"
+            name="Hovaten"
+            placeholder="ĐIền Họ và tên"
+          /><!--type không điền thì mặc định là text, điền sai cũng vậy; placehoder là để xuất hiện cái chữ mờ mờ trong ô điền( như kiểu hướng dẫn)-->
+        </p>
+      </div>
+      <div>
+        <p><b>Mã số sinh viên:</b></p>
+        <input
+          type="text"
+          name="Mã sinh viên"
+          value="2101050053"
+          readonly
+        /><!--readonly là chỉ đọc tức là người ngoài không sửa được, mặc định cho giá trị ý rồi-->
+      </div>
+      <div>
+        <p><b>Giới thiệu:</b></p>
+        <textarea name="Giới thiệu" id="">Nhập vào giới thiệu...</textarea>
+      </div>
+      <div>
+        <p><b>Email:</b></p>
+        <input type="email" name="email" placeholder="Dạng @gamil.com" />
+      </div>
+      <div>
+        <p><b>Số điện thoại:</b></p>
+        <input name="Số điện thoại" type="tel" placeholder="Dạng số: 0123-456-789" required
+        pattern="([0-9]){4}(-[0-9]{3}(-[0-9]{3}))">
+      </div>
+      <!--SỐ đầu tiên luôn bắt đầu bằng 0
+      số thứ 2:3,4,8,9
+      8 số cuối cùng 0->9-->
+      <div>
+        <p><b>Số điện thoại ví dụ:</b></p>
+        <input name="Số điện thoại" type="tel" placeholder="Dạng số: 0976XXXXXX" required
+        pattern="([0]){1}([3,4,8,9]{1}([0-9]{8}))"> <!--hỏi thầy ngoặc-->
+      </div>
+      <div>
+        <p><b>Giới tính:</b></p>
+        <input type="radio" name="gioitinh" value="Nam" > Nam <br><!--Chọn 1 thôi-->
+        <input type="radio" name="gioitinh" value="Nữ"> Nữ <br>
+        <input type="radio" name="gioitinh" value="Bê đê"> Bê đê <br>
+      </div>
+      <div>
+        <p><b>Sở thích:</b></p>
+        Game: <input type="checkbox" name="sothich" value="Game" ><br><!--Chọn 1 thôi-->
+        Music: <input type="checkbox" name="sothich" value="Music"><br>
+        Sport: <input type="checkbox" name="sothich" value="Sport"><br>
+      </div>
+      <div>
+        <p><b>Trình duyệt yêu thích:</b></p>
+        <select name="browser">
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Opera">Opera</option>
+            <option value="Safari">Safari</option>
+            <option value="Cốc cốc">Cốc cốc</option>
+        </select>
+      </div>
+      <div>
+        0 <input type="range" value="80"> 100
+      </div>
+      <div>
+        <p><b>Tuổi:</b></p>
+        <input type="number" name="tuoi" step="2">
+      </div>
+      <div>
+        <p><b>Năm sinh:</b></p>
+        <input type="date" name="ngaythangnamsinh">
+      </div>
+      <div>
+        <p><b>Chọn màu sắc:</b></p>
+        <input type="color" name="mausac">
+      </div>
+      <div>
+        <p><b>Mật khẩu:</b></p>
+        <input type="password" name="matkhau">
+      </div>
+      <br />
+      <div>
+        <input type="reset">
+        <input type="submit" />
+      </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Lf8df8FCJhk?si=RmL3hq0tqqMysAk2" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </form>
+    <div>
+        <audio controls>
+            <source src="" type="audio/mp3"><!--Điền vào src như ảnh-->
+        </audio>
+    </div>
+    <div>
+        <video controls width="560" height="315">
+            <source src="" type="video/mp4"><!--Điền vào src như ảnh-->
+        </video>
+    </div>
+    <div>
+        Thẻ &lt;h1&gt;&lt;/h1&gt; dùng để viết tiêu đề
+    </div>
+  </body>
+</html>
