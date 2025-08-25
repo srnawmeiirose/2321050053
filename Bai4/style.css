@@ -1,0 +1,20 @@
+/*h1{
+    background-color: darkgray;
+}*/
+.box1{
+    background-color: blue;
+}
+.box2{
+    background-color: pink;
+    /*background-color: red;*/
+    /* 1 gtri ( cách xung quanh = giá trị đó)*/
+    /* 2 gtri: gtri đầu( trên, dưới); gtri sau(trái, phải)*/
+    /*4gtri: trên, phải, dưới, trái*/
+   /* margin: 50px 10px 100px 30px;*/
+   width: 50%;
+   margin: 50px auto;/*auto là căn khối ra giữa, 50px là căn ra giữa có trên dưới cách 50px*/
+   padding: 100px;
+}
+.box3{
+    background-color: green;
+}
