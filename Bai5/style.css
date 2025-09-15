@@ -1,22 +1,21 @@
 body {
-  margin: 0px;
+  margin: 0px; /*Xóa khoảng cách mặc định (margin) của toàn bộ trang*/
 }
 nav {
-  background-color: #0c4ca3;
+  background-color: #0c4ca3; /*Thanh điều hướng (<nav>) có nền màu xanh lam đậm.*/
 }
 
 ul {
-  display: flex;
-  list-style: none;
-  justify-content: center; /*đi theo display:flex; đây là 1 cặp*/
+  display: flex; /*Các danh sách <ul> hiển thị theo dạng flexbox (nằm ngang).*/
+  list-style: none; /*bỏ chấm đầu dòng*/
+  justify-content: center; /* căn giữa các mục trong danh sách; đi theo display:flex; đây là 1 cặp*/
   /*gap: 20px; set khoảng cách các chữ*/
-  list-style: none;
 }
 li {
-  padding: 15px;
+  padding: 15px; /*khoảng đệm 15px để tách chữ/khối ra*/
 }
 .border {
-  border-right: 1px solid gray;
+  border-right: 1px solid gray; /*Thêm đường kẻ dọc màu xám ở bên phải*/
 }
 .danhmuc-lienket {
   color: white;
@@ -24,15 +23,364 @@ li {
   font-family: Roboto, Arial, Tahoma;
 }
 .Banner-QC {
-  display: flex;
-  justify-self: center;
-  margin: 10px 0px;
+  display: flex; /*quảng cáo hiển thị linh hoạt*/
+  justify-self: center; /*ảnh ra giữa*/
+  margin: 10px 0px; /*k/c trên dưới 10px, trái phải là 0px*/
+  max-width: 80%;
 }
 .QC {
+  /*sắp xếp con theo flex, dàn đều hai bên.*/
   display: flex;
   justify-content: space-between;
 }
 header {
+  /*viền dày 10px màu xám nhạt phía dưới header*/
   border-bottom: 10px solid #f1f1f2;
 }
+/*-------------------------------------------Bài về nhà--------------------------------------------------------------------------*/
+.news {
+  margin: 20px; /*khoảng cách ngoài 20px*/
+}
+
+/*Banner 2*/
+.top-banner {
+  /*Banner trên cùng sắp xếp flex, giãn đều hai đầu*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* căn giữa theo trục dọc*/
+  /*nền trắng, viền mảnh màu xám, padding 10px*/
+  padding: 10px; /*k/c cách đều*/
+  background-color: white;
+  border: 1px solid #ddd;
+  flex-wrap: wrap; /*cho xuống dòng*/
+}
+
+.banner-logos {
+  /*hiển thị ngang, có khoảng cách 10px, tự xuống dòng nếu hẹp*/
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.banner-logos img {
+  height: 60px;
+  object-fit: contain; /*giữ tỷ lệ*/
+  border: 1px solid #eee; /*viền xám...*/
+  padding: 4px; /*k/c giữa các ảnh là 4px*/
+  background-color: #fff;
+}
+
+.website-links {
+  display: flex;
+  flex-direction: column; /*hiểm thị cột*/
+  align-items: flex-start;
+  margin-left: 10px;
+  border-left: 1px solid #ccc;
+  padding-left: 15px; /*k/c về bên trái...*/
+}
+
+.website-links label {
+  font-weight: bold; /*label chữ đậm*/
+  font-size: 14px;
+  margin-bottom: 5px; /*k/c dưới 5px*/
+  color: #333;
+}
+
+.website-links select {
+  padding: 5px; /*hộp chonnj select có pd 5, cỡ chữ 14*/
+  font-size: 14px;
+}
+/*THÔNG BÁO*/
+.announcement-section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family: Arial, sans-serif; /**/
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0056d2;
+  border-bottom: 2px solid #0056d2; /*gạch chân màu xanh, cách nội dung dưới 20px*/
+  padding-bottom: 5px;
+  margin: 0 0 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  display: flex;
+  gap: 30px; /*chia làm 2 ó k/c 30px*/
+}
+
+.left {
+  /*Cột trái chiếm 30%, nền trắng, padding 10px, chữ căn giữa.*/
+  width: 30%;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.left img {
+  /*Ảnh chiếm toàn bộ chiều ngang cột, cao tối đa 200px, không méo*/
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.left p {
+  /*Đoạn mô tả dưới ảnh cách trên 10px, chữ xám*/
+  margin-top: 10px;
+  color: #333;
+}
+
+.right {
+  /*Cột phải chiếm 70%, có thể định vị con (position: relative)*/
+  width: 70%;
+  position: relative;
+}
+
+.right ul {
+  /*Danh sách bên phải có dấu vuông, cách trái 20px, chữ xám, cách dưới 20px.*/
+  list-style-type: square;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  display: block;
+}
+
+.right ul li {
+  /*Mỗi mục cách nhau 10px, dòng cao 1.5*/
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.event-link {
+  /*chia làm 2 bên*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-link a {
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: bold;
+}
+
+.event-link .more {
+  color: gray;
+  font-weight: normal;
+}
+/*2 tin cuối*/
+.news {
+  margin: 40px 20p /*margin 40px trên dưới, 20px ngang*/ x;
+  justify-content: center;
+}
+
+.news-tintuc {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 15px;
+  /* padding-bottom: 5px; */
+  justify-content: space-between;
+}
+
+.news-tintuc h2 {
+  /*h2 chữ xanh đậm, có gạch dưới cùng màu*/
+  font-size: 20px;
+  font-weight: bold;
+  color: #0056d2;
+  border-bottom: 2px solid #0056d2;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+.news-tintuc a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  float: right; /*nằm bên phải*/
+}
+.news-danhsach {
+  display: grid; /*hiển thị dạng lưới*/
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.news-muc img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /*ảnh cover khung*/
+  border-radius: 2px; /*bo nhẹ 2px*/
+}
+
+.news-muc p {
+  /*Mô tả dưới ảnh nhỏ, đen, cách ảnh 8px, cao dòng 1.4*/
+  font-size: 14px;
+  color: #000;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
 /**/
+
+.news-muc ul {
+  padding-left: 20px;
+  color: #333;
+  font-size: 14px;
+  list-style-type: square;
+  display: block;
+}
+
+/*anh doi tac*/
+.news-anh {
+  display: flex; /*ảnh xếp ngang*/
+  flex-wrap: wrap;
+  gap: 20px; /* khoảng cách giữa các ảnh */
+  justify-content: center; /*căn giữa*/
+  margin-top: 20px;
+}
+/*MEDIA*/
+.media-section {
+  display: flex; /*ảnh xếp ngang*/
+  gap: 20px;
+  background: #111;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Bên trái */
+.media-left {
+  flex: 1; /*cột trái chiếm ddeeeuf 1 phần*/
+  display: flex;
+  flex-direction: column;
+}
+
+.media-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: #000;
+  padding: 10px;
+}
+
+/* Bên phải */
+.media-right {
+  flex: 1; /*cọt phải chiếm 1 phần bằng*/
+}
+
+.media-right h3 {
+  /*tiêu đề bên phải chữ lớn hơn, có viền xám dưới*/
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.media-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.media-list li {
+  padding: 12px;
+  border-bottom: 1px solid #555;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.media-list li:hover {
+  /*Khi hover, nền tối hơn, hiện con trỏ tay*/
+  background: #222;
+  cursor: pointer;
+}
+
+/*footer*/
+.footer {
+  background: #004aad;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 30px 0 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around; /*giãn đều*/
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto; /*căn giữa*/
+}
+
+.footer-box {
+  flex: 1; /*mỗi box chiếm 1 phần*/
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px; /*gạch dưới*/
+  text-transform: uppercase; /*hoa*/
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+}
+
+.footer-box p {
+  margin-bottom: 10px;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.footer-box ul li a:hover {
+  text-decoration: underline; /*hover link có dấu gạch dưới*/
+}
+
+/* SOCIAL ICONS */
+.social-icons a img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px; /*cách phải*/
+  transition: transform 0.3s; /*có hiệu ứng khi hover*/
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1); /*hover icon phóng to 10%*/
+}
+
+.visitor-stats {
+  /*Thống kê lượt truy cập cách trên 10px, rộng tối đa 100px*/
+  margin-top: 10px;
+  max-width: 100px;
+}
+
+/* BOTTOM FOOTER */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+main {
+  display: block;
+  justify-self: center;
+  max-width: 80%;
+}
+.anhlogo {
+  max-width: 100%;
+  margin-left: -300px;
+}
