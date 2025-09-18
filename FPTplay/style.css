@@ -301,3 +301,11 @@ footer {
   width: 20px;
   height: auto;
 }
+.list .film-container{
+  width: 100%;
+  height: auto;
+}
+.list .film-container img{
+  width: 100%;
+  height: auto;
+}
