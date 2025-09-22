@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <script>
+      //Để viết chú thích js dùng ký tự
+      document.writeln("Hello world!");
+      //Khai báo biến
+      let hoTen = "Nguyễn Thị Thanh Tâm"; //tạo biến, có t/c là gtri của nó có thể thay đổi được, có thể dùng var hoặc let
+      document.writeln(hoTen + "<br>");
+      //Khai báo hằng
+      const pi = 3.14; //khong thể thay đổi giá trị
+
+      let soThuNhat = 10;
+      let soThuHai = 5;
+      let ketQua = 0;
+      //+
+      ketQua = soThuNhat + soThuHai;
+      document.writeln(ketQua);
+      //-
+      ketQua = soThuNhat - soThuHai;
+      document.writeln(ketQua);
+      //*
+      ketQua = soThuNhat * soThuHai;
+      document.writeln(ketQua);
+      // /
+      ketQua = soThuNhat / soThuHai;
+      document.writeln(ketQua);
+      // %
+      ketQua = soThuNhat % soThuHai;
+      document.writeln(ketQua);
+      // ++ --
+      ketQua = soThuNhat / soThuHai;
+      ketQua++;
+      document.writeln(ketQua);
+
+      ketQua = soThuNhat / soThuHai;
+      ketQua--;
+      document.writeln(ketQua);
+
+      //gán
+      //+=
+      //soThuNhat += soThuHai;// soThuNhat = soThuNhat + soThuHai
+      //document.writeln(soThuNhat)
+
+      //-=
+      soThuNhat -= soThuHai; // soThuNhat = soThuNhat - soThuHai
+      document.writeln(soThuNhat);
+      //phép toán logic
+      let soThuBa = 10;
+      let soThuTu = "10";
+      document.writeln(soThuBa == soThuTu); // trong js == ko qtam kdl chỉ qtam gtri; === qtam đến giá trị và kdl
+      document.writeln(!(soThuBa !== soThuTu));
+      //một số kiểu dl: object
+      let thongTinSV = {
+        hoTen: "Nguyễn Thị Thanh Tâm",
+        tuoi: 20,
+        gioiTinh: false,
+        lop: "Khoa học máy tính k68",
+        address: {},
+      };
+      let diaChi = {
+        thanhPho: "Hà Nội",
+        phuongXa: "Đại Thanh",
+        duong: "Tả Thanh Oai",
+        soNha: "11",
+      };
+      let namNay = 2025;
+      thongTinSV.address = diaChi;
+      document.writeln(
+        "<br>" +
+          "Xin chào bạn " +
+          thongTinSV.hoTen +
+          " lớp " +
+          thongTinSV.lop +
+          " Số nhà" +
+          thongTinSV.address.soNha +
+          " Đường: " +
+          thongTinSV.address.duong +
+          " Xã: " +
+          thongTinSV.address.phuongXa +
+          " Thành phố: " +
+          thongTinSV.address.thanhPho +
+          " Năm sinh: " +
+          (namNay - thongTinSV.tuoi + "<br>")
+      );
+      //Đổi kdl
+      soThuTu = parseInt(soThuTu);
+      document.writeln(typeof soThuTu); //ktra kdl
+      let soThuNam = "9.5";
+
+      soThuNam = parseFloat(soThuNam);
+      document.writeln(typeof soThuNam);
+      document.writeln(soThuNam)
+    </script>
+  </body>
+</html>

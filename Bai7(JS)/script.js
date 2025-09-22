@@ -1,0 +1,1 @@
+document.writeln("Xin chào" + "<br>");// có thể cài các câu html vào js//
