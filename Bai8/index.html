@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let donHang = {
+        maDonHang: "123456",
+        thongTinKH: {
+          hoTen: "Nguyễn Thị Thanh Tâm",
+          soDienThoai: "0966030056",
+          thanhVienThanThiet: true,
+        },
+        danhSachSP: {
+          sp1: {
+            maSP: "caphe",
+            tenSP: "Cà Phê",
+            gia: 200000,
+            soLuong: 10,
+          },
+          sp2: {
+            maSP: "caphe",
+            tenSP: "Cà Phê",
+            gia: 200000,
+            soLuong: 10,
+          },
+          sp3: {
+            maSP: "caphe",
+            tenSP: "Cà Phê",
+            gia: 50000,
+            soLuong: 10,
+          },
+        },
+        trangThai: false,
+        diaChi: "Hà Nội",
+      };
+
+      let danhSachSP = donHang.danhSachSP;
+
+      let tongSP1 = danhSachSP.sp1.soLuong * danhSachSP.sp1.gia;
+      let tongSP2 = danhSachSP.sp2.soLuong * danhSachSP.sp2.gia;
+      let tongSP3 = danhSachSP.sp3.soLuong * danhSachSP.sp3.gia;
+
+      let tong = tongSP1 + tongSP2 + tongSP3;
+
+      document.writeln("Tổng cộng: " + tong + "<br>");
+
+      //STRING
+      let hoTen = "Nguyễn Thị Thanh Tâm";
+      document.writeln(hoTen.length + "<br>"); //đếm cả dấu cách, đo độ dài của chuỗi
+
+      let myString = "Hello World";
+      document.writeln(myString[4] + "<br>"); //lấy ký tự
+      document.writeln(myString.slice(1, 4) + "<br>"); //căt chuối con
+      document.writeln(myString.replace("Hello", "Hi") + "<br>"); // thế chuỗi
+      document.writeln(myString.toLocaleLowerCase() + "<br>");
+      document.writeln(myString.indexOf("o") + "<br>"); //kiểm tra có ký tự không- trả ra vị trí
+      //includes
+      document.writeln(myString.includes("a") + "<br>"); //kiểm tra ký tự có/ko? - trả ra kiểu boolean
+      document.writeln(myString.split("e") + "<br>"); //tìm đến phần tử đó, chém bỏ đi, cho dấu phẩy vào, đếm chuối ko tính dấu phẩy nhe
+      document.writeln(myString.startsWith("World") + "<br>"); //chỉ kiểm tra chuỗi bắt đầu đầy tiên có bắt đầu bằng ký tự gì đó hay không
+      //NUMBER
+      //Định dạng số toFlixed()
+      var pi = 3.14159;
+      pi = pi.toFixed(2);
+      document.writeln(pi + "<br>");
+
+      document.writeln(isNaN(10) + "<br>"); // is not a number? xem là chuỗi hay số=> trả ra true/false
+      //DATE
+      //let today = new Date("2023-10-11"); //khởi tạo đối tượng, phải có new, có thể chọn năm- tháng- ngày để nó hiển ra => có thể sửa được
+      //document.writeln(today + "<br>");
+      //Lấy ra năm: getFullYear
+      //Lấy ra tháng: getMonth-> tháng 1 là 0
+      //Lấy ra ngày: getDate chủ nhật là 0, thứ 2 là 1
+      let toDay = new Date;
+      document.writeln(toDay.getHours());
+    
+    </script>
+  </body>
+</html>
