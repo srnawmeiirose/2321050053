@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //mảng
+      let arr = [1, 2, 3, 4, "a", "b", "c", 2, 3];
+      let ten = "ten";
+      let thongTin = {
+        ten: ten,
+      };
+      document.writeln(Array.isArray(ten)); //ktra biến có phải mảng không? bên trong () điền tên của biến đấy
+
+      document.writeln(arr.length); //ktra độ dài mảng
+      document.writeln(arr[2]); //laays ptu thu 2
+      document.writeln(arr.indexOf(3)); //ktra trong mang co ptu minh can tim kiem ko=> tra ra vi tri, ko co tra ra -1
+      document.writeln(arr.lastIndexOf(3)); //vitri cuoi xuat hien
+      arr[3] = 6; //thay gtri trong mang
+      document.writeln(arr + "<br>");
+      //Noi mang concat
+      let a, b, c, d;
+      a = [1, 2, 3];
+      b = "JavaScript";
+      c = [42, "JS"];
+      d = a.concat(b, c);
+      //   d = d.join("-");
+      d.pop(); //xoa ptu cuoi cung trong mang
+      d.push("Tâm cute"); //đẩy thêm ptu
+      d.reverse(); //đảo
+      d.shift(); //xóa ptu đầu tiên
+      document.writeln(d + "<br>");
+
+      //if-else
+      let so = 100000000000000000000000000000000000000000000000001;
+      let soCuoi = parseInt(so[so.length - 1]);
+      if (soCuoi % 2 == 0) {
+        document.writeln(so + " la so chan" + "<br>");
+      } else {
+        document.writeln(so + " la so le" + "<br>");
+      }
+      let now = new Date().getHours();
+      // 5-10 chào buổi sáng
+      // 10-13 chào buổi trưa
+      //  13-17h chào buổi chiều,
+      // 17h-22h chao buoi toi,
+      // con lai chao buoi dem
+      document.writeln(now);
+      if (now >= 5 && now < 10) {
+        document.writeln("Chào buổi sáng");
+      } else if (now >= 10 && now < 13) {
+        document.writeln("Chào buổi trưa");
+      } else if (now >= 13 && now < 17) {
+        document.writeln("Chào buổi chiều");
+      } else if (now >= 17 && now < 22) {
+        document.writeln("Chào buổi tối");
+      } else {
+        document.writeln("Chào buổi đêm");
+      }
+
+      // a, b, c
+      // tong = a*0,6 +b*0.3 + c*0.1
+      // 8-10: a
+      // 7-8 b
+      // 5-7 c
+      //4-5 d
+      //còn lại f
+      let diem_a = 1000;
+      let diem_b = 9;
+      let diem_c = 10;
+      tong = diem_a * 0.6 + diem_b * 0.3 + diem_c * 0.1;
+      if (tong <= 10 && tong > 8) {
+        document.writeln("A");
+      } else if (tong <= 8 && tong > 7) {
+        document.writeln("B");
+      } else if (tong <= 7 && tong > 5) {
+        document.writeln("C");
+      } else if (tong <= 5 && tong > 4) {
+        document.writeln("D");
+      } else if( tong <= 4 && tong >=0) {
+        document.writeln("F");
+      }
+   else{
+    document.writeln("Điểm không hợp lệ!!!")
+   }
+    </script>
+  </body>
+</html>
