@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function hello() {
+        let ten = prompt("moi nhập tên của bạn ");
+        document.writeln("Xin chào " + ten);
+      }
+      let so = parseInt(prompt("nhập vào 1 số"));
+
+      function coThamSo(so) {
+        for (let i = 0; i < so; i++) {
+          document.writeln("Xin chào " + "<br>");
+        }
+      }
+      coThamSo(so);
+    </script>
+  </body>
+</html>

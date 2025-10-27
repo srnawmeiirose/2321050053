@@ -50,15 +50,15 @@
       // con lai chao buoi dem
       document.writeln(now);
       if (now >= 5 && now < 10) {
-        document.writeln("Chào buổi sáng");
+        document.writeln("Chào buổi sáng" + "<br>");
       } else if (now >= 10 && now < 13) {
-        document.writeln("Chào buổi trưa");
-      } else if (now >= 13 && now < 17) {
-        document.writeln("Chào buổi chiều");
+        document.writeln("Chào buổi trưa" + "<br>");
+      } else if (now >= 13 && now < 17 + "<br>") {
+        document.writeln("Chào buổi chiều" + "<br>");
       } else if (now >= 17 && now < 22) {
-        document.writeln("Chào buổi tối");
+        document.writeln("Chào buổi tối" + "<br>");
       } else {
-        document.writeln("Chào buổi đêm");
+        document.writeln("Chào buổi đêm" + "<br>");
       }
 
       // a, b, c
@@ -68,24 +68,24 @@
       // 5-7 c
       //4-5 d
       //còn lại f
-      let diem_a = 1000;
+      let diem_a = 10;
       let diem_b = 9;
-      let diem_c = 10;
+      let diem_c = -11;
       tong = diem_a * 0.6 + diem_b * 0.3 + diem_c * 0.1;
-      if (tong <= 10 && tong > 8) {
-        document.writeln("A");
-      } else if (tong <= 8 && tong > 7) {
-        document.writeln("B");
+      if
+      (a<0||b<0||c<0||a>10||b>10||c>10
+      )
+      else if (tong <= 10 && tong > 8) {
+        document.writeln("Điểm chữ: A");}
+       else if (tong <= 8 && tong > 7) {
+        document.writeln("Điểm chữ: B");
       } else if (tong <= 7 && tong > 5) {
-        document.writeln("C");
+        document.writeln("Điểm chữ: C");
       } else if (tong <= 5 && tong > 4) {
-        document.writeln("D");
-      } else if( tong <= 4 && tong >=0) {
-        document.writeln("F");
+        document.writeln("Điểm chữ: D");
+      } else if (tong <= 4 && tong >= 0) {
+        document.writeln("Điểm chữ: F");
       }
-   else{
-    document.writeln("Điểm không hợp lệ!!!")
-   }
     </script>
   </body>
 </html>

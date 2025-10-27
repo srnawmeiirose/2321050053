@@ -1,0 +1,62 @@
+body {
+  width: 95%;
+  margin: auto;
+}
+.tieude {
+  display: flex;
+  justify-content: space-between;
+}
+.login {
+  background-color: grey;
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.header {
+  display: flex;
+}
+.content {
+  display: flex;
+}
+.trai {
+  margin-top: 50px;
+  width: 30%;
+}
+.phai {
+  margin: 0px 100px 0px 50px;
+}
+
+.khung {
+  width: 20%;
+  border: 1px solid grey;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+.nd {
+  margin-left: 10px;
+}
+.nd p {
+  font-size: smaller;
+}
+table {
+  width: 94%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+td {
+  border: 1px solid #ddd;
+  border-right: none;
+  border-left: none;
+  padding: 12px;
+}
+.ok {
+  background-color: #f1f1f1;
+}

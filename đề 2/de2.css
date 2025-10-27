@@ -1,0 +1,54 @@
+body {
+  width: 95%;
+  margin: auto;
+}
+.tieude {
+  display: flex;
+  justify-content: space-between;
+}
+.login {
+  background-color: grey;
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.content {
+  display: flex;
+  margin-top: 100px;
+}
+.danhmuc p {
+  margin-top: 40px;
+}
+.get {
+  background-color: black;
+  border-radius: 40px;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.ndp {
+  width: 40%;
+  margin: auto;
+}
+.chan {
+  display: flex;
+}
+.chan p {
+  margin-left: 40px;
+}
+.phai {
+  display: flex;
+}
+.ndt {
+  display: flex;
+}
+.ndp b {
+  font-size: 50px;
+}

@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column; /* chia dọc */
+  height: 100vh;
+}
+
+header, footer {
+  background: #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.main {
+  display: flex; /* chia ngang */
+  flex: 1;       /* chiếm toàn bộ phần giữa */
+}
+
+aside {
+  flex: 1;       /* Sidebar nhỏ hơn */
+  background: lightblue;
+  padding: 20px;
+}
+
+section {
+  flex: 3;       /* Content to hơn */
+  background: lightgreen;
+  padding: 20px;
+}
+/* nav-điều hướng */
+/* Đặt style cho menu */
+    nav {
+      background-color: #0c4ca3; /* màu nền xanh */
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;   /* bỏ dấu chấm tròn */
+      margin: 0;
+      padding: 0;
+      display: flex;      /* sắp xếp ngang */
+      justify-content: center; /* căn giữa */
+      gap: 20px;          /* khoảng cách giữa các mục */
+    }
+
+    nav ul li a {
+      text-decoration: none;  /* bỏ gạch chân */
+      color: white;           /* chữ trắng */
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 8px;     /* bo góc */
+      transition: 0.3s;       /* hiệu ứng hover mượt */
+    }
+
+    nav ul li a:hover {
+      background-color: #0056b3; /* đổi màu khi rê chuột */
+    }

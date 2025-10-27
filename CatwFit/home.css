@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Thanh điều hướng */
+nav {
+  background-color: #fdbce5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo bên trái, menu bên phải */
+}
+
+/* Logo */
+.logo img {
+  width: 60px; /* tăng kích thước logo */
+  height: auto;
+}
+.logo{
+margin-left: 30px;
+}
+/* Menu danh sách */
+ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+/* Các mục menu */
+li {
+  margin-left: 120px; /* khoảng cách giữa các mục */
+  margin-right: 10px;
+}
+
+/* Liên kết trong menu */
+.menu-items {
+  color: white;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+/* Hiệu ứng hover nhẹ */
+.menu-items:hover {
+  color: #333;
+ font-size: 30px; 
+}

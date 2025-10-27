@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    display: flex ;
+}
+.left{
+    width: 400px;
+    height: 500px;
+}
+.left .anh{
+    /* width: 400px;
+    height: 250px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.left .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left img{
+    width: 250px;
+    height: auto;
+}
+.right{
+   width: 400px;
+    height: 500px; 
+}
+.right .tieude{
+   font-size: 20px;
+    color: aqua;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+}
+.tk-mk{
+display: flex;
+flex-direction: column;
+gap: 15px;
+margin-top: 20px;
+margin-left: -20px;
+}
+.tk-mk text{
+    width: 50px;
+    height: 100px;
+}
+.tk-mk input {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.dfrli{
+    display: flex;
+    /* justify-content: center; */
+    margin: 10px;
+}
+.dfrli img{
+    width: 20px;
+    height: auto;
+
+}

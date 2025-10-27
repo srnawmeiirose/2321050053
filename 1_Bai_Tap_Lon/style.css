@@ -1,0 +1,37 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 auto;
+}
+header{
+    width: 250vh;
+    height: 6vh;
+    background-color: rgb(246, 182, 233);
+    display: flex;
+    justify-content: space-between;
+}
+.taskbar_left img{
+    height: 6vh;
+    width: auto;
+    margin-left: 20vh;
+}
+nav {
+  background-color: #0c4ca3; /*Thanh điều hướng (<nav>) có nền màu xanh lam đậm.*/
+}
+
+ul {
+  display: flex; /*Các danh sách <ul> hiển thị theo dạng flexbox (nằm ngang).*/
+  list-style: none; /*bỏ chấm đầu dòng*/
+  justify-content: center; /* căn giữa các mục trong danh sách; đi theo display:flex; đây là 1 cặp*/
+  /*gap: 20px; set khoảng cách các chữ*/
+}
+li {
+  padding: 15px; /*khoảng đệm 15px để tách chữ/khối ra*/
+}
+.border {
+  border-right: 1px solid gray; /*Thêm đường kẻ dọc màu xám ở bên phải*/
+}
+.danhmuc-lienket {
+  color: white;
+  text-decoration: none;
+  font-family: Roboto, Arial, Tahoma;
+}
