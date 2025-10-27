@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1>Tính tổng</h1>
+    <div>
+      <p>Nhập số thứ nhất</p>
+      <input type="number" id="soThuNhat" />
+    </div>
+    <div>
+      <p>Nhập số thứ hai</p>
+      <input type="number" id="soThuHai" />
+    </div>
+    <div><button onclick="tinhTong()">Tính tổng</button></div>
+    <div>Kết quả: <input type="number" id=" ketQua" /></div>
+    <script>
+      function tinhTong() {
+        let soThuNhat = parseFloat(document.getElementById("soThuNhat").value);
+        let soThuHai = parseFloat(document.getElementById("soThuHai").value);
+        let canhBao = "";
+        if (!soThuNhat) {
+          canhBao += "VUi long nhạp só thứ nhất";
+        }
+        if (!soThuHai) {
+          canhBao += "VUi long nhạp só thứ hai";
+        }
+        if (canhBao) {
+          alert(canhBao);
+        }
+        let tong = soThuNhat + soThuHai;
+        document.getElementById("ketQua").value = tong;
+      }
+    </script> -->
+    <!--  Bài tập: Tính điểm chữ -->
+    <!--  Bài tập: Tính điểm chữ -->
+    <h1>Tính điểm chữ</h1>
+    <div>
+      <p>Nhập điểm A</p>
+      <input type="number" id="diemA" />
+    </div>
+    <div>
+      <p>Nhập điểm B</p>
+      <input type="number" id="diemB" />
+    </div>
+    <p>Nhập điểm C</p>
+    <div><input type="number" id="diemC" /></div>
+
+    <div><button onclick="tinhDiem()">Tính điểm</button></div>
+    <div>Kết quả: <input type="text" id="ketQua" /></div>
+
+    <script>
+      function tinhDiem() {
+        let diemA = parseFloat(document.getElementById("diemA").value);
+        let diemB = parseFloat(document.getElementById("diemB").value);
+        let diemC = parseFloat(document.getElementById("diemC").value);
+        let canhBao = "";
+        if (!diemA) {
+          canhBao += "Chưa nhập điểm A ";
+        }
+        if (!diemB) {
+          canhBao += "Chưa nhập điểm B ";
+        }
+        if (!diemC) {
+          canhBao += "Chưa nhập điểm C ";
+        }
+        if (canhBao) {
+          alert(canhBao);
+          return;
+        }
+
+        let tong = diemA * 0.6 + diemB * 0.3 + diemC * 0.1;
+
+        if (
+          diemA < 0 ||
+          diemB < 0 ||
+          diemC < 0 ||
+          diemA > 10 ||
+          diemB > 10 ||
+          diemC > 10
+        ) {
+          alert("Điểm nhập không hợp lệ (0 - 10)");
+          return;
+        } else if (tong <= 10 && tong > 8) {
+          document.getElementById("ketQua").value = "A";
+        } else if (tong <= 8 && tong > 7) {
+          document.getElementById("ketQua").value = "B";
+        } else if (tong <= 7 && tong > 5) {
+          document.getElementById("ketQua").value = "C";
+        } else if (tong <= 5 && tong > 4) {
+          document.getElementById("ketQua").value = "D";
+        } else if (tong <= 4 && tong >= 0) {
+          document.getElementById("ketQua").value = "F";
+        }
+
+        // document.getElementById("ketQua").value;
+      }
+    </script>
+  </body>
+</html>
