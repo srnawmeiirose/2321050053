@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        /* text-align: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div><h1>Ví dụ về thay đổi chế độ</h1></div>
+      <div><img class="anh" width="300px" alt="" src="sun.jpg" /></div>
+      <div><h1>Chế độ sáng</h1></div>
+      <div><button onclick="doiCheDo()">Thay đổi chế độ</button></div>
+    </div>
+    <script>
+      let cheDo = true;
+      function doiCheDo() {
+        //Nếu chế độ đang là sán- true - > chuyển về tối-false
+        if (cheDo == true) {
+          document.getElementsByTagName("body")[0].style =
+            "background-color: black";
+          document.getElementsByTagName("h1")[0].style = "color: yellow";
+          document.getElementsByTagName("h1")[1].style = "color: white";
+          document.getElementsByTagName("h1").innerHTML = "Chế độ tối";
+          document.getElementsByClassName("anh")[0].src = "moon.jpg";
+          cheDo = false;
+        } else {
+          document.getElementsByTagName("body")[0].style =
+            "background-color: white";
+          document.getElementsByTagName("h1")[0].style = "color: black";
+          document.getElementsByTagName("h1")[1].style = "color: black";
+          document.getElementsByTagName("h1").innerHTML = "Chế độ sáng";
+          document.getElementsByClassName("anh")[0].src = "sun.jpg";
+          cheDo = true;
+        }
+      }
+    </script>
+  </body>
+</html>
