@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .nhapThongTin {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tính BMI</h1>
+    <div class="nhapThongTin">
+      <div class="nhap-tinh">
+        <div>
+          <p>Nhập chiều cao</p>
+          <input type="number" id="chieuCao" />
+        </div>
+        <div>
+          <p>Nhập cân nặng</p>
+          <input type="number" id="canNang" />
+        </div>
+        <div><button onclick="tinhToan()">Tính IBM</button></div>
+        <div>Kết quả: <input type="number" id="ketQua" /></div>
+      </div>
+      <div>
+        <img
+          class="anh"
+          src="img\z7173870475372_38cac1af6365012333203ca3a0ccaeb3.jpg"
+        />
+      </div>
+    </div>
+    <script>
+      function tinhToan() {
+        let chieuCao = parseFloat(document.getElementById("chieuCao").value);
+        let canNang = parseFloat(document.getElementById("canNang").value);
+        let canhBao = "";
+        if (!chieuCao) {
+          canhBao += "Chưa nhập chiều cao";
+        }
+        if (!canNang) {
+          canhBao += "Chưa nhập cân nặng";
+        }
+        if (chieuCao <= 0 || canNang <= 0) {
+          canhBao += "Chỉ số nhập vào phải lớn hơn 0";
+        }
+
+        if (canhBao) {
+          alert(canhBao);
+        }
+
+        let tinh = canNang / (chieuCao * chieuCao);
+        document.getElementById("ketQua"), (value = "ketQua");
+      }
+      function doiCheDo() {
+        if (tinh >= 0 && tinh <= 18.5) {
+          document.getElementsByClassName("anh")[0].src =
+            "img\z7173870276393_8d9e4cda002d0ee4bbeda73ed2147a03.jpg";
+        } else if (tinh > 18.5 && tinh <= 24.49) {
+          document.getElementsByClassName("anh")[0].src =
+            "img\z7173870475372_38cac1af6365012333203ca3a0ccaeb3.jpg";
+        } else if (tinh > 24.49 && tinh <= 29.9) {
+          document.getElementsByClassName("anh")[0].src =
+            "img\z7173870289704_1c8d039a015e66eb8df995ad78aeac81.jpg";
+          cheDo = true;
+        } else if (tinh > 29.9 && tinh <= 39.9) {
+          document.getElementsByClassName("anh")[0].src =
+            "img\z7173870475372_38cac1af6365012333203ca3a0ccaeb3.jpg";
+          cheDo = true;
+        } else {
+          document.getElementsByClassName("anh")[0].src =
+            "img\z7173870444523_e30867f79d29fa2e23ceb49a67f0bdbd.jpg";
+        }
+      }
+    </script>
+  </body>
+</html>
