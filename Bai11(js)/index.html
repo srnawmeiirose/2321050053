@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- <h1>Tính tổng</h1>
+    <h1>Tính toán</h1>
     <div>
       <p>Nhập số thứ nhất</p>
       <input type="number" id="soThuNhat" />
@@ -15,13 +15,37 @@
       <p>Nhập số thứ hai</p>
       <input type="number" id="soThuHai" />
     </div>
-    <div><button onclick="tinhTong()">Tính tổng</button></div>
+    <!--Tổng-->
+    <div><button onclick="tinhToan()">Tính tổng</button></div>
+    <!--Hiệu-->
+    <div><button onclick="tinhToan()">Tính hiệu</button></div>
+    <!--Tích-->
+    <div><button onclick="tinhToan()">Tính tích</button></div>
+    <!--Thương-->
+    <div><button onclick="tinhToan()">Tính thương</button></div>
     <div>Kết quả: <input type="number" id=" ketQua" /></div>
     <script>
-      function tinhTong() {
+      // function tinhTong() {
+      //   let soThuNhat = parseFloat(document.getElementById("soThuNhat").value);
+      //   let soThuHai = parseFloat(document.getElementById("soThuHai").value);
+      //   let canhBao = "";
+      //   if (!soThuNhat) {
+      //     canhBao += "VUi long nhạp só thứ nhất";
+      //   }
+      //   if (!soThuHai) {
+      //     canhBao += "VUi long nhạp só thứ hai";
+      //   }
+      //   if (canhBao) {
+      //     alert(canhBao);
+      //   }
+      //   let tong = soThuNhat + soThuHai;
+      //   document.getElementById("ketQua").value = tong;
+      // }
+      function tinhToan(phepTinh) {
         let soThuNhat = parseFloat(document.getElementById("soThuNhat").value);
         let soThuHai = parseFloat(document.getElementById("soThuHai").value);
         let canhBao = "";
+        let ketQua = 0;
         if (!soThuNhat) {
           canhBao += "VUi long nhạp só thứ nhất";
         }
@@ -31,14 +55,22 @@
         if (canhBao) {
           alert(canhBao);
         }
-        let tong = soThuNhat + soThuHai;
-        document.getElementById("ketQua").value = tong;
+       if(phepTinh == 'cong'){
+        ketQua = soThuNhat + soThuHai
+       } else if(phepTinh == 'tru'){
+        ketQua = soThuNhat - soThuHai
+       } else if ( phepTinh =='nhan'){
+        ketQua = soThuNhat * soThuHai
+       } else{
+        ketQua = soThuNhat / soThuHai
+       }
+
       }
-    </script> -->
+    </script>
     <!--  Bài tập: Tính điểm chữ -->
     <!--  Bài tập: Tính điểm chữ -->
-    <h1>Tính điểm chữ</h1>
-    <div>
+    <!-- <h1>Tính điểm chữ</h1> -->
+    <!-- <div>
       <p>Nhập điểm A</p>
       <input type="number" id="diemA" />
     </div>
@@ -69,7 +101,6 @@
         }
         if (canhBao) {
           alert(canhBao);
-          return;
         }
 
         let tong = diemA * 0.6 + diemB * 0.3 + diemC * 0.1;
@@ -83,7 +114,6 @@
           diemC > 10
         ) {
           alert("Điểm nhập không hợp lệ (0 - 10)");
-          return;
         } else if (tong <= 10 && tong > 8) {
           document.getElementById("ketQua").value = "A";
         } else if (tong <= 8 && tong > 7) {
@@ -97,7 +127,7 @@
         }
 
         // document.getElementById("ketQua").value;
-      }
+      } -->
     </script>
   </body>
 </html>
