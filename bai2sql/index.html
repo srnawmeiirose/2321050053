@@ -1,0 +1,54 @@
+CREATE DATABASE if NOT EXISTS quan_ly_web_phim;
+USE quan_ly_web_phim; #dùng khi mở sql, nhằm lấy dlieu
+
+CREATE TABLE phim (
+	ten_phim varchar(1000),
+    phim_id INT(30) PRIMARY KEY,
+    nam_phat_hanh int,
+    moTa text,
+    thoi_luong INT,
+    id_dienvien varchar(50),
+    id_daoDien varchar(50),
+    the_loai varchar(50),
+    poster varchar,
+    quoc_gia_id,
+    trailer varchar
+);
+CREATE TABLE theLoai(
+	maTheLoai INT(100) PRIMARY KEY,
+    tenTheLoai varchar(50),
+    theloai_id int
+);
+CREATE TABLE tapPhim(
+	soTap INT,
+    maPhim INT(30)
+    id int
+    phim_id
+    trailer varchar
+    
+);
+CREATE TABLE nguoiDung(
+    id int,
+    ten_dangnhap varchar(50),
+    user_name varchar(50),
+    mat_khau varchar(50),
+    ho_ten varchar(50),
+    email varchar(50),
+    sdt varchar(10),
+    quyen_id int,
+    ngay_sinh datetime
+);
+CREATE TABLE quyen(
+	id int(10),
+    ten_quyen varchar(20)
+);
+CREATE TABLE phim_dienvien(
+    id int,
+    phim_id int,
+    dien_vien_id int
+);
+CREATE TABLE quocGia(
+    id int, 
+    ten_quoc_gia VARCHAR,
+    quoc_gia_id int
+);
