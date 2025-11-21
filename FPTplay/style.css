@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0%;
   color: white;
-  font-family: ;
+  /* font-family: ; */
 }
 /* HEADER */
 header {
@@ -12,6 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #1f1f1f;
+
 }
 .container {
   width: 70%;
@@ -75,7 +76,70 @@ main {
   /* background-color: red; */
   background-color: #1f1f1f;
   overflow-y: scroll;
+  scrollbar-width: none;
 }
+.danhsach-tt ul {
+  margin: 0;
+  padding-left: 20px;
+  gap: 20px;
+  list-style: disc;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  cursor: pointer;
+}
+.danhsach-tt {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+.danhsach-tt ul {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  gap: 20px;
+  list-style: disc;
+}
+.banner-info button {
+  margin-right: 10px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.xemngay {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.trailer {
+  color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
 .banner-QC {
   width: 100%;
   margin: 0 auto;
@@ -110,13 +174,15 @@ main {
   margin-right: 10px;
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
   width: 200px;
+  cursor: pointer;
 }
 .film img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  
 }
 /* Khúc 2 */
 .film2 {
@@ -125,6 +191,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   width: 330px;
+  cursor: pointer;
 }
 .film2 img {
   width: 100%;
@@ -138,6 +205,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   width: 200px;
+  cursor: pointer;
 }
 .film3 img {
   width: 100%;
@@ -151,6 +219,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   width: 500px;
+  cursor: pointer;
 }
 .film4 img {
   width: 100%;
@@ -194,19 +263,25 @@ main {
   box-sizing: border-box;
 }
 body {
-  overflow-x: hidden; /* NGĂN KÉO NGANG */
+  overflow-x: hidden;
 }
 footer {
-  /* background-color: #111; */
+  width: 100%;
   background-color: #1f1f1f;
   color: white;
-  padding: 40px 60px;
-  font-size: 14px;
+  padding: 40px 0;
+}
+.footer-inner {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 60px;
+  box-sizing: border-box;
 }
 
 .footer-container {
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
   padding: 20px 60px;
@@ -224,7 +299,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.dathongbao{
+.dathongbao {
   margin-bottom: 30px;
 }
 .footer-logo img {
@@ -255,9 +330,8 @@ footer {
   cursor: pointer;
 }
 
-
-.contact-info{
-   display: flex;
+.contact-info {
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 8px;
@@ -301,11 +375,11 @@ footer {
   width: 20px;
   height: auto;
 }
-.list .film-container{
+.list .film-container {
   width: 100%;
   height: auto;
 }
-.list .film-container img{
+.list .film-container img {
   width: 100%;
   height: auto;
 }
