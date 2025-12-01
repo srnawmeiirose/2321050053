@@ -1,0 +1,57 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border: 1px solid #333;
+}
+
+table th {
+  border: 1px solid #333;
+  padding: 10px;
+  font-size: 15px;
+  background-color: (249, 228, 232, 1)rgba;
+}
+
+table td {
+  border: 1px solid #333;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.sua {
+  padding: 6px 12px;
+  background: #5bc0de;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-right: 8px;
+  text-decoration: none;
+}
+
+.xoa {
+  padding: 6px 12px;
+  background: red;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.sua-xoa {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
