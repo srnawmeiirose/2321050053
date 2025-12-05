@@ -73,22 +73,59 @@
                case 'trangchu':
                   include "trangchu.php";
                   break;
+                  // phim
                case 'phim':
-                  include "phim.php";
+                  include "phim/phim.php";
                   break;
+               case 'themphim':
+                  include "phim/themphim.php";
+                  break;
+               case 'capnhatphim':
+                  include "phim/capnhatphim.php";
+                  break;         
+                  // thể loại
                case 'theloai':
-                  include "theloai.php";
+                  include "theloai/theloai.php";
                   break;
+               case 'xoatheloai':
+                  include "theloai/xoatheloai.php";
+                  break;   
+               case 'themtheloai':
+                  include "theloai/themtheloai.php";
+                  break;
+               case 'capnhattheloai':
+                  include "theloai/capnhattheloai.php";
+                  break;      
+                  // quốc gia
                case 'quocgia':
-                  include "quocgia.php";
+                  include "quocgia/quocgia.php";
                   break;
-              case 'themnguoidung':
-                  include "themnguoidung.php";
+               case 'xoanquocgia':
+                  include "quocgia/xoaquocgia.php";
                   break;
+               case 'themquocgia':
+                  include "quocgia/themquocgia.php";
+                  break;
+               case 'capnhatquocgia':
+                  include "quocgia/capnhatquocgia.php";
+                  break;     
+                      // người dùng
                case 'nguoidung':
-                  include "nguoidung.php";
+                  include "nguoidung/nguoidung.php";
                   break;
-               case 'dangxuat':         
+               case 'xoanguoidung':
+                  include "nguoidung/xoanguoidung.php";
+                  break;   
+                case 'themnguoidung':
+                  include "nguoidung/themnguoidung.php";
+                  break;
+                case 'capnhatnguoidung':
+                  include "nguoidung/capnhatnguoidung.php";
+                  break;
+               case 'dangxuat':
+                  session_unset();
+                  session_destroy(); 
+                  header('location: login.php');         
                   break;
             }
          }

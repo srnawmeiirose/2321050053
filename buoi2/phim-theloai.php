@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="bang.css">
 </head>
 <body>
-    <h1>Quản lý thông tin phim</h1>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h1>Thông tin phim</h1>
+    <a class="them" href="index.php?page_layout=themphim">Thêm phim</a>
+    </div>
     <table border = 1>
       <tr>
+        <th>ID phim</th>
         <th>Tên phim</th>
-        <th>Đạo diễn</th>
-        <th>Năm phát hành</th>
+        <th>Tên thể loại</th>
         <th>Poster</th>
         <th>Quốc gia</th>
         <th>Số tập</th>
@@ -38,7 +41,7 @@
         <td><?php echo $row["trailer"]?></td>
         <td><?php echo $row["mo_ta"]?></td>
         <td class="sua-xoa">
-    <a class="sua" href="#">Sửa</a>
+    <a class="sua" href="index.php?page_layout=capnhatphim&id=<?php echo $row['id']?>">Cập nhật</a>
     <a class="xoa" href="xoaphim.php?id=<?php echo $row['id']?>">Xóa</a>
         </td>
       </tr>

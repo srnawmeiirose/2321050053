@@ -7,10 +7,13 @@
 <link rel="stylesheet" href="bang.css">
 </head>
 <body>
-    <h1>Thể loại</h1>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h1>Thông tin thể loại</h1>
+    <a class="them" href="index.php?page_layout=themtheloai">Thêm thể loại</a>
+    </div>
     <table border = 1>
       <tr>
-        <th>Số thứ tự</th>
+        <th>ID</th>
         <th>Thể loại</th>
         <th>Chức năng</th>
       </tr>
@@ -25,9 +28,9 @@
       <tr>
         <td><?php echo $row["id"]?></td>
         <td><?php echo $row["ten_the_loai"]?></td>
-        <td>
-            <button>Sửa</button>
-            <a class = "xoa" href="xoatheloai.php?id=<?php echo $row["id"]?>">Xóa</a>
+        <td class="sua-xoa">
+    <a class="sua" href="index.php?page_layout=capnhattheloai&id=<?php echo $row['id']?>&tentheloai=<?php echo $row["ten_the_loai"]?>">Cập nhật</a>
+    <a class="xoa" href="xoatheloai.php?id=<?php echo $row['id']?>">Xóa</a>
         </td>
       </tr>
       <?php } ?>

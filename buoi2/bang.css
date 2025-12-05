@@ -1,5 +1,4 @@
 body {
-  font-family: "Times New Roman", Times, serif;
   margin: 0;
 }
 
@@ -21,7 +20,7 @@ table th {
   border: 1px solid #333;
   padding: 10px;
   font-size: 15px;
-  background-color: (249, 228, 232, 1)rgba;
+  background-color: (249, 228, 232, 1) rgba;
 }
 
 table td {
